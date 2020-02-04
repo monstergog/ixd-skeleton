@@ -15,9 +15,6 @@ exports.view = function(req, res){
 	  {
 		'name': 'Help',
 		'id': 'project3'
-	  },
-	  { 'name': 'Logout',
-		'id': 'project4'
 	  }
 	]  
 	});

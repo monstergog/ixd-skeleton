@@ -13,6 +13,7 @@ var search = require('./routes/search');
 var results = require('./routes/results');
 var history = require('./routes/history');
 var help = require('./routes/help');
+var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +44,7 @@ app.get('/search', search.view);
 app.get('/results', results.view);
 app.get('/history', history.view);
 app.get('/help', help.view);
+app.get('/login', login.view);
 // Example route
 // app.get('/users', user.list);
 
