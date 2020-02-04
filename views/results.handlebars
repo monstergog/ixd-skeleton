@@ -22,13 +22,22 @@
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
+		<div style=";font-size:12px;" align="right">
+			<button onclick="goBack()">Go Back</button>
+		</div>
+		<script>
+		function goBack() {
+		  window.history.back();
+		}
+		</script>
+		
 		<div align="middle" class="jumbotron">
 			<h1>Where To Eat</h1>
 		</div>
 
-		<h4 style=";font-size:30px;" align="center"><b>Menu</b></h4>
+		<h4 style=";font-size:30px;" align="center"><b>Results</b></h4>
 		{{#each projects}}
-			<div style=";font-size:30px;" class="project" id="{{id}}">
+			<div class="project" id="{{id}}">
 				<a href="{{name}}" class="thumbnail">
 					<p>{{name}}</p>
 				</a>
