@@ -43,3 +43,69 @@ body {
 .jumbotron p.active {
 	color: #1f6ddd;
 }
+
+.centerImage {
+	display: block;
+	margin: 0 auto;
+}
+
+input[type=submit] {
+	width: 250px;
+	height: 50px;
+}
+
+input.advanced {
+	width: 150px;
+	height: 20px;
+}
+
+.hidden {
+	display:none;
+}
+
+.hidden2 {
+	display:none;
+}
+
+.shortInput {
+	width: 70px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: white;
+  color: black;
+  min-width: 12px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}

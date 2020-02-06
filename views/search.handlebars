@@ -31,49 +31,89 @@
 		}
 		</script>
 		
-		<div align="middle" class="jumbotron">
+		<div align="middle">
 			<h1>Where To Eat</h1>
 		</div>
 
 		<h4 style=";font-size:30px;" align="center"><b>Search</b></h4>
-			<div style=";font-size:30px; class="project" id="Location">
-				<span>From:</span>
-				<select class="ui dropdown">
-				  <option value="">Location</option>
-				  <option value="0">My Location</option>
-				  <option value="1">Google Maps</option>
+		
+		<div>
+			<img src="/images/map.jpg" alt="Temp Map" class="centerImage" style="width:300px;height:300px;">
+		</div>
+
+		<hr>
+			
+		<div align="center" class='searchMenu'>
+			<div>Start Location:</div>
+			<input placeholder='Location'></input>
+			<br>Use My Current Location<br><br>
+			<div>End Location:</div>
+			  <input placeholder='Location'></input>
+			  <br>Use My Current Location<br><br>
+			<div><input class='formSubmit' type='submit' value="Next"></div>
+		</div>
+		
+		<div align="center" class='hidden'>
+		
+			<div class="row">
+			  <div class="column">Departure Time:</div>
+			  <div class="column">Arrival Time:</div>
+			</div>
+			<div class="row">
+			  <div class="column">
+				<select class='ui dropdown'>
+					<option value='0'>Depart Time</option>
 				</select>
-			</div>
-			
-			<div style=";font-size:30px;" class="project" id="Craving">
-				<span>Craving:</span>
-				<select class="ui dropdown">
-				  <option value="">Craving</option>
-				  <option value="0">Fast Food</option>
-				  <option value="1">Chinese</option>
-				  <option value="2">Pizza</option>
-				  <option value="3">Japanese</option>
-				  <option value="4">Pasta</option>
+			  </div>
+			  <div class="column">
+				<select class='ui dropdown'>
+					<option value='0'>Arrive Time</option>
 				</select>
+			  </div>
 			</div>
+			<br>
 			
-			<div style=";font-size:30px;" class="project" id="Budget">
-				<span>Budget:</span>
-				<select class="ui dropdown">
-				  <option value="">Budget</option>
-				  <option value="0">$</option>
-				  <option value="1">$$</option>
-				  <option value="2">$$$</option>
-				  </select>
+			<div><input type='submit' class='advanced' value="Advanced Options"></div>
+			
+			<div class='hidden2'>
+				<div class="row">
+				  <div class="column">Food Perference:</div>
+				  <div class="column">Transportation:</div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<select class='ui dropdown'>
+						<option value='0'>Preference</option>
+					</select>
+				  </div>
+				  <div class="column">
+					<select class='ui dropdown'>
+						<option value='0'>Transport</option>
+					</select>
+				  </div>
+				</div>
+				<br>
+				<div class="row">
+				  <div class="column">Budget:</div>
+				  <div class="column">Dining Time:</div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<i class="fa fa-user icon">$</i>
+					<input step='0.01' class='shortInput'></input>
+				  </div>
+				  <div class="column">
+					<input type='time' class='shortInput'></input>
+				  </div>
+				</div>
 			</div>
-			
-			<br></br><br></br>
-			
-			<div style=";font-size:40px;" align="middle" class="wrapper" id="Results">
-				<button class="button" type="button">Pick Me One!</button>
-			</div>
-			
-			
+				
+			<br>
+			<form action='Results'>
+				<div><input type='submit' class='search' value="Find Me A Resturaunt"></div>
+			</form>
+		</div>
+		
 	</div>
 	
 	<script src="https://code.jquery.com/jquery.js"></script>
