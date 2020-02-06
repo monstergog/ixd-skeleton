@@ -45,7 +45,8 @@ body {
 }
 
 .centerImage {
-	test-align: center;
+	display: block;
+	margin: 0 auto;
 }
 
 input[type=submit] {
