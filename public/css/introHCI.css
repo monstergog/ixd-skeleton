@@ -1,111 +1,126 @@
 /* applies to anything of class "example-class-selector" */
+
 .example-class-selector {
-	margin-top: 2em;
+    margin-top: 2em;
 }
 
+
+/*Second round of test
+
 /* applies to any <p> descendants of an element of class "example-class-selector" */
+
 .example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+    /* Colors are in hexadecimal: http://www.colorpicker.com/ */
+    color: #CC00AA;
 }
+
 
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
+
 body {
-     border: 1px dotted gray;
-     padding: 20px;
+    border: 1px dotted gray;
+    padding: 20px;
 }
 
 .jumbotron {
-	position: relative;
-	background: none;
+    position: relative;
+    background: none;
 }
 
 .jumbotron:after {
-     content:"";
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;	
+    content: "";
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .jumbotron p {
-     color: #6e6e6e;
+    color: #6e6e6e;
 }
 
 .project a {
-     text-align: center;
+    text-align: center;
 }
 
 .jumbotron p.active {
-	color: #1f6ddd;
+    color: #1f6ddd;
 }
 
 .centerImage {
-	display: block;
-	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 input[type=submit] {
-	width: 250px;
-	height: 50px;
+    width: 250px;
+    height: 50px;
 }
 
 input.advanced {
-	width: 150px;
-	height: 20px;
+    width: 150px;
+    height: 20px;
 }
 
 .hidden {
-	display:none;
+    display: none;
 }
 
 .hidden2 {
-	display:none;
+    display: none;
 }
 
 .shortInput {
-	width: 70px;
+    width: 70px;
 }
 
 .column {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
+
 
 /* Clear floats after the columns */
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
+
 
 /* Style the input container */
+
 .input-container {
-  display: flex;
-  width: 100%;
-  margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
 }
+
 
 /* Style the form icons */
+
 .icon {
-  padding: 10px;
-  background: white;
-  color: black;
-  min-width: 12px;
-  text-align: center;
+    padding: 10px;
+    background: white;
+    color: black;
+    min-width: 12px;
+    text-align: center;
 }
 
+
 /* Style the input fields */
+
 .input-field {
-  width: 100%;
-  padding: 10px;
-  outline: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
 }
 
 .input-field:focus {
-  border: 2px solid dodgerblue;
+    border: 2px solid dodgerblue;
 }
