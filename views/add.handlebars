@@ -22,16 +22,45 @@
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div align="middle" class="jumbotron">
+		<div style=";font-size:12px;" align="right">
+			<button onclick="goBack()">Go Back</button>
+		</div>
+		<script>
+		function goBack() {
+		  window.history.back();
+		}
+		</script>
+		
+		<div align="middle">
 			<h1>Where To Eat</h1>
 		</div>
 
-		<h4 style=";font-size:30px;" align="center"><b>Login</b></h4>
-			<div class="project" id="Login">
-				<a href="/" class="thumbnail">
-					<p>"To Home Menu"</p>
-				</a>
-			</div>
+		<h4 style=";font-size:30px;" align="center"><b>Add Purchase</b></h4>
+
+		<hr>
+			
+		<div align="center" class='searchMenu'>
+			<div>What Did you Purchase?</div>
+			<input id='item' placeholder='Item'></input><br><br>
+			<div>Was is a "Need" or a "Want"?</div>
+				<select class='ui dropdown' id='wantNeed'>
+						<option value='0'>Need or Want</option>
+						<option value='1'>Need</option>
+						<option value='2'>Want</option>
+				</select><br><br>
+			<div><input class='formSubmit' type='submit' value="Next"></div>
+		</div>
+		
+		<div align="center" class='hidden'>		
+				<label for="w3mission">Leave a Note:</label>
+				<br>
+				<textarea id="note" rows="4" cols="50"></textarea>
+				<br><br>
+			<form action='Results'>
+				<div><input type='submit' class='search' value="Add My Purchase"></div>
+			</form>
+		</div>
+		
 	</div>
 	
 	<script src="https://code.jquery.com/jquery.js"></script>

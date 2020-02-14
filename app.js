@@ -9,11 +9,11 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var search = require('./routes/search');
+var add = require('./routes/add');
 var results = require('./routes/results');
 var history = require('./routes/history');
 var help = require('./routes/help');
-var login = require('./routes/login');
+var menu = require('./routes/menu');
 // Example route
 // var user = require('./routes/user');
 
@@ -40,11 +40,11 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-app.get('/search', search.view);
+app.get('/add%20purchase', add.view);
 app.get('/results', results.view);
 app.get('/history', history.view);
 app.get('/help', help.view);
-app.get('/login', login.view);
+app.get('/menu', menu.view);
 // Example route
 // app.get('/users', user.list);
 

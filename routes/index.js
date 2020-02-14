@@ -4,18 +4,5 @@
  */
 
 exports.view = function(req, res){
-	res.render('index', {
-	'projects': [
-	  { 'name': 'Search',
-		'id': 'project1'
-	  },
-	  { 'name': 'History',
-		'id': 'project2'
-	  },
-	  {
-		'name': 'Help',
-		'id': 'project3'
-	  }
-	]  
-	});
+  res.render('index');
 };
