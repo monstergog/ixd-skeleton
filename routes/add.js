@@ -8,5 +8,7 @@ exports.view = function(request, response){
 		"note": request.query.note
 	});
 	
+	//var formData = JSON.stringify($("#myForm").serializeArray());
+	
 	response.render('add', data);
 };
