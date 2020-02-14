@@ -92,35 +92,10 @@ input.advanced {
     clear: both;
 }
 
-
-/* Style the input container */
-
-.input-container {
-    display: flex;
-    width: 100%;
-    margin-bottom: 15px;
+.currencyinput {
+    border: 1px inset #ccc;
+}
+.currencyinput input {
+    border: 1;
 }
 
-
-/* Style the form icons */
-
-.icon {
-    padding: 10px;
-    background: white;
-    color: black;
-    min-width: 12px;
-    text-align: center;
-}
-
-
-/* Style the input fields */
-
-.input-field {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-}
-
-.input-field:focus {
-    border: 2px solid dodgerblue;
-}

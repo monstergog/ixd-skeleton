@@ -40,8 +40,13 @@
 		<hr>
 			
 		<div align="center" class='searchMenu'>
+		<form>
 			<div>What Did you Purchase?</div>
-			<input id='item' name='item' placeholder='Item'></input><br><br>
+			<input id='item' name='item' placeholder='item'></input><br><br>
+			<div>How Much Did You Spend?</div>
+			<span class='currencyinput'>$<input id='cost' name='cost' placeholder='cost'>
+			</input></span>
+			<br><br>
 			<div>Was it a "Need" or a "Want"?</div>
 				<select class='ui dropdown' id='wantNeed' name='wantNeed'>
 						<option value='0'>Need or Want</option>
@@ -49,6 +54,7 @@
 						<option value='2'>Want</option>
 				</select><br><br>
 			<div><input class='formSubmit' type='submit' value="Next"></div>
+		</form>
 		</div>
 		
 		<div align="center" class='hidden'>		
@@ -66,5 +72,6 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	<script type="/.." src="data.json"></script>
 </body>
 </html>
