@@ -2,10 +2,10 @@
 
 exports.view = function(request, response){   
 	data.purchases.push({
-		"item": request.query.item,
-		"cost": request.query.cost,
-		"wantNeed": request.query.wantNeed,
-		"note": request.query.note
+		"item": "Filler Item"/*request.query.item*/,
+		"cost": "Filler Cost"/*request.query.cost*/,
+		"wantNeed": "Filler Want/Need"/*request.query.wantNeed*/,
+		"note": "Filler Note"/*request.query.note*/
 	});
 	
 	//var formData = JSON.stringify($("#myForm").serializeArray());
