@@ -1,9 +1,9 @@
 {
 	"purchases": [
 		{
-			"myItem": "temp1",
-			"MyWantNeed": "temp2",
-			"myNote": "temp3",
+			"item": "temp1",
+			"wantNeed": "temp2",
+			"note": "temp3"
 		}
 	]
 }

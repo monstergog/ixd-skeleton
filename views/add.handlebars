@@ -41,9 +41,9 @@
 			
 		<div align="center" class='searchMenu'>
 			<div>What Did you Purchase?</div>
-			<input id='item' placeholder='Item'></input><br><br>
-			<div>Was is a "Need" or a "Want"?</div>
-				<select class='ui dropdown' id='wantNeed'>
+			<input id='item' name='item' placeholder='Item'></input><br><br>
+			<div>Was it a "Need" or a "Want"?</div>
+				<select class='ui dropdown' id='wantNeed' name='wantNeed'>
 						<option value='0'>Need or Want</option>
 						<option value='1'>Need</option>
 						<option value='2'>Want</option>
@@ -52,12 +52,12 @@
 		</div>
 		
 		<div align="center" class='hidden'>		
-				<label for="w3mission">Leave a Note:</label>
+				<label for="For Note">Leave a Note:</label>
 				<br>
-				<textarea id="note" rows="4" cols="50"></textarea>
+				<textarea id="note" name='note' rows="4" cols="50"></textarea>
 				<br><br>
 			<form action='Results'>
-				<div><input type='submit' class='search' value="Add My Purchase"></div>
+				<div><input type='submit' class='add' value="Add My Purchase"></div>
 			</form>
 		</div>
 		
