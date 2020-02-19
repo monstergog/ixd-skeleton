@@ -1,6 +1,7 @@
  var data = require("../data.json");
 
-exports.view = function(request, response){   
+exports.view = function(request, response){
+	
 	data.purchases.push({
 		"item": "Filler Item"/*request.query.item*/,
 		"cost": "Filler Cost"/*request.query.cost*/,

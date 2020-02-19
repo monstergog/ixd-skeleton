@@ -48,6 +48,33 @@ app.get('/menu', menu.view);
 // Example route
 // app.get('/users', user.list);
 
+	// var fs = require('fs');
+
+	// app.use(express.static('public'));
+
+	// app.get('/users', function(req, res) {
+	  // var name = req.query.name;
+	  // var age = req.query.age;
+
+	  // var person = {
+		// name: name,
+		// age: age
+	  // };
+
+	  // savePersonToPublicFolder(person, function(err) {
+		// if (err) {
+		  // res.status(404).send('User not saved');
+		  // return;
+		// }
+
+		// res.send('User saved');
+	  // });
+	// });
+
+	// function savePersonToPublicFolder(person, callback) {
+	  // fs.writeFile('./public/person.json', JSON.stringify(person), callback);
+	// }
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

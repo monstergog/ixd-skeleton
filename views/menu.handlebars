@@ -17,7 +17,25 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+    <![endif]-->
+	
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+	
+	<script>
+		$(document).ready(() =>  {
+			console.log('hello browser');
+			$('#allUsersButton').click(() => {
+				console.log('clicked' + new Date());
+			})
+		});
+	
+		$('#readButton').click(() => {
+			console.log('clicked');
+		});
+	</script>
+	
 </head>
 
 <body>
@@ -41,11 +59,14 @@
 					<p>Logout</p>
 				</a>
 			</div>
+		
+		<p id='demo'></p>
+		
+		Name <input id="myText" type="text" size="20"/>
+		<button class='addList' id="readButton">Get Profile</button>
+		<button id="allUsersButton">Get all usernames</button>
 	</div>
-	
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/introHCI.js"></script>
+
 </body>
 </html>
 

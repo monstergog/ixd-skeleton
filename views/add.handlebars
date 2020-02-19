@@ -15,7 +15,13 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+    <![endif]-->
+	
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+	<script type="/.." src="data.json"></script>
+	
 </head>
 
 <body>
@@ -50,8 +56,8 @@
 			<div>Was it a "Need" or a "Want"?</div>
 				<select class='ui dropdown' id='wantNeed' name='wantNeed'>
 						<option value='0'>Need or Want</option>
-						<option value='1'>Need</option>
-						<option value='2'>Want</option>
+						<option value='Need'>Need</option>
+						<option value='Want'>Want</option>
 				</select><br><br>
 			<div><input class='formSubmit' type='submit' value="Next"></div>
 		</form>
@@ -62,16 +68,14 @@
 				<br>
 				<textarea id="note" name='note' rows="4" cols="25"></textarea>
 				<br><br>
-			<form action='Results'>
+			<form id='addList' action='Results'>
 				<div><input type='submit' class='add' value="Add My Purchase"></div>
 			</form>
 		</div>
 		
+		Name <input id="myText" type="text" size="20"/>
+		<button class='addList' id="readButton">Get Profile</button>
+		
 	</div>
-	
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/introHCI.js"></script>
-	<script type="/.." src="data.json"></script>
 </body>
 </html>
