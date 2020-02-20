@@ -12,8 +12,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$(".formSubmit").click(function(event){
-	  $('.searchMenu').hide();
-	  $('.hidden').removeClass('hidden');
+	  if (errCheck() == true)
+	  {
+		$('.searchMenu').hide();
+		$('.hidden').removeClass('hidden');
+	  }
 	  event.preventDefault();
 	});
 	
@@ -22,22 +25,19 @@ function initializePage() {
 		$('.advanced').hide();
 		event.preventDefault();
 	});
-	
-	$(".addList").click(addToList);
 }
 
-function addToList(){
-	console.log("Attempting to Add to List");
+function errCheck(){
+	var item = document.getElementById("item").value;
+	var cost = document.getElementById("cost").value;
+	var wantNeed = document.getElementById("wantNeed").value;
+	var note = document.getElementById("note").value;
+	var date = document.getElementById("date").value;
 	
-	var x = document.getElementById("myText").value;
-	var newPurchase = {
-		"item": document.getElementById("item").value,
-		"cost": document.getElementById("cost").value,
-		"wantNeed": document.getElementById("wantNeed").value,
-		"note": document.getElementById("note").value
-	}
-	console.log(newPurchase);
-	callBackFunc();
-	
-	 // data.purchases.push(newPurchase);
+	if (item === ""){alert("Please Submit an Item"); return false;}
+	if (cost === ""){alert("Please Submit an Dollar Amount"); return false;}
+	else if (cost < 1){alert("Please Submit a Whole Positive Dollar Amount"); return false;}
+	if (wantNeed == 'null'){alert("Please Select Want or Need"); return false;}
+	if (date == ""){alert("Please Submit a Date"); return false;}
+	return true;
 };

@@ -4,30 +4,35 @@
 			"item": "Soda",
 			"cost": "2",
 			"wantNeed": "Want",
+			"date": "2020-2-15",
 			"note": "vending machine"
 		},
 		{
 			"item": "Rent",
 			"cost": "1250",
 			"wantNeed": "Need",
+			"date": "2020-3-1",
 			"note": "Monthly Rent"
 		},
 		{
 			"item": "Gas",
 			"cost": "23",
 			"wantNeed": "Need",
+			"date": "2020-2-20",
 			"note": "About half a tank of gas"
 		},
 		{
 			"item": "Sushi",
 			"cost": "20",
 			"wantNeed": "Want",
+			"date": "2020-2-20",
 			"note": "Going out to eat with friends"
 		},
 		{
 			"item": "Jamba Juice",
 			"cost": "7",
 			"wantNeed": "Want",
+			"date": "2020-2-22",
 			"note": "Large Jamba drink"
 		}
 	]

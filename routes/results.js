@@ -6,6 +6,7 @@ exports.view = function(req, res){
 		"item": req.query.item,
 		"cost": req.query.cost,
 		"wantNeed": req.query.wantNeed,
+		"date": req.query.date,
 		"note": req.query.note
 		}]
 	};
@@ -14,6 +15,7 @@ exports.view = function(req, res){
 		"item": req.query.item,
 		"cost": req.query.cost,
 		"wantNeed": req.query.wantNeed,
+		"date": req.query.date,
 		"note": req.query.note
 	});
 	

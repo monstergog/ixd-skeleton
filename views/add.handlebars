@@ -47,17 +47,19 @@
 		<form id='addList' action='Results'>
 			<div align="center" class='searchMenu'>
 				<div>What Did you Purchase?</div>
-				<input id='item' name='item' placeholder='item'></input><br><br>
+				<input id='item' name='item' placeholder='Item'></input><br><br>
 				<div>How Much Did You Spend?</div>
-				<span class='currencyinput'>$<input type='number' min='0' step='1' id='cost' name='cost' placeholder='cost'>
+				<span class='currencyinput'>$<input type='number' min='1' step='1' id='cost' name='cost' placeholder='Cost'>
 				</input></span>
 				<br><br>
 				<div>Was it a "Need" or a "Want"?</div>
 					<select class='ui dropdown' id='wantNeed' name='wantNeed'>
-							<option value=''>Need or Want</option>
+							<option value='null'>Need or Want</option>
 							<option value='Need'>Need</option>
 							<option value='Want'>Want</option>
 					</select><br><br>
+				<div>When Did You Purchase It:</div>
+				<input type='date' id='date' name='date'></input><br><br>
 				<div><input class='formSubmit' type='submit' value="Next"></div>
 			</div>
 			
@@ -66,7 +68,7 @@
 					<br>
 					<textarea id="note" name='note' rows="4" cols="25"></textarea>
 					<br><br>
-					<div><input type='submit' id='submitBtn' class='btn btn-default' value="Add My Purchase"></div>
+					<div><input type='submit' id='submitBtn' value="Add My Purchase"></div>
 			</div>
 		</form>
 	</div>
