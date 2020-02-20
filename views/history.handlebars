@@ -41,11 +41,11 @@
 
 		<h4 style=";font-size:30px;" align="center"><b>History</b></h4>
 		
-		<div>
+		<div><b>
 			Total Amount Spent: $<span id='spent'></span><br>
 			Total Amount Spent on Needs: $<span id='need'></span><br>
 			Total Amount Spent on Wants: $<span id='want'></span><br>
-		</div>
+		</b></div>
 		<script>
 			var moneySpent = 0;
 			var moneyNeed = 0;
@@ -54,7 +54,8 @@
 		
 		{{#each purchases}}
 			<div class="tempfriends">
-				<h3>{{item}} / ${{cost}} / {{wantNeed}} / {{date}}</a></h3>
+				<h3>{{item}} / ${{cost}} / {{wantNeed}}</a></h3>
+				<h4>Date: {{date}}</h4>
 				<p>Note:&nbsp{{note}}</p>
 				<hr>
 			</div>
