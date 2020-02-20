@@ -37,12 +37,12 @@
 
 		<h4 style=";font-size:30px;" align="center"><b>Results</b></h4>
 		<p align="center"> You added:
-		<h3 align="center">Filler Item{{item}} - $Filler Cost{{cost}} - Filler Want/Need{{wantNeed}}</a></h3>
-			<p align="center">Note:&nbsp Filler Note{{note}}</p>
+		{{#each obj}}
+			<h3 align="center">{{item}} - ${{cost}} - {{wantNeed}}</h3>
+			<p align="center">Note:&nbsp {{note}}</p>
 			<hr>
-		
+		{{/each}}
 		</p>
-		
 		
 		<a href="/add%20purchase" class="thumbnail">
 			<p style=";font-size:20px;" align="center"><b>Add Another Purchase</b></p>

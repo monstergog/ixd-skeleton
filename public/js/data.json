@@ -2,7 +2,7 @@
 	"purchases": [
 		{
 			"item": "Soda",
-			"cost": "2",
+			"cost": "1.50",
 			"wantNeed": "Want",
 			"note": "vending machine"
 		},

@@ -20,7 +20,6 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
-	<script type="/.." src="data.json"></script>
 	
 </head>
 
@@ -44,38 +43,32 @@
 		<h4 style=";font-size:30px;" align="center"><b>Add Purchase</b></h4>
 
 		<hr>
-			
-		<div align="center" class='searchMenu'>
-		<form>
-			<div>What Did you Purchase?</div>
-			<input id='item' name='item' placeholder='item'></input><br><br>
-			<div>How Much Did You Spend?</div>
-			<span class='currencyinput'>$<input id='cost' name='cost' placeholder='cost'>
-			</input></span>
-			<br><br>
-			<div>Was it a "Need" or a "Want"?</div>
-				<select class='ui dropdown' id='wantNeed' name='wantNeed'>
-						<option value='0'>Need or Want</option>
-						<option value='Need'>Need</option>
-						<option value='Want'>Want</option>
-				</select><br><br>
-			<div><input class='formSubmit' type='submit' value="Next"></div>
-		</form>
-		</div>
 		
-		<div align="center" class='hidden'>		
-				<label for="For Note">Leave a Note:</label>
-				<br>
-				<textarea id="note" name='note' rows="4" cols="25"></textarea>
+		<form id='addList' action='Results'>
+			<div align="center" class='searchMenu'>
+				<div>What Did you Purchase?</div>
+				<input id='item' name='item' placeholder='item'></input><br><br>
+				<div>How Much Did You Spend?</div>
+				<span class='currencyinput'>$<input type='number' min='0' step='1' id='cost' name='cost' placeholder='cost'>
+				</input></span>
 				<br><br>
-			<form id='addList' action='Results'>
-				<div><input type='submit' class='add' value="Add My Purchase"></div>
-			</form>
-		</div>
-		
-		Name <input id="myText" type="text" size="20"/>
-		<button class='addList' id="readButton">Get Profile</button>
-		
+				<div>Was it a "Need" or a "Want"?</div>
+					<select class='ui dropdown' id='wantNeed' name='wantNeed'>
+							<option value=''>Need or Want</option>
+							<option value='Need'>Need</option>
+							<option value='Want'>Want</option>
+					</select><br><br>
+				<div><input class='formSubmit' type='submit' value="Next"></div>
+			</div>
+			
+			<div align="center" class='hidden'>		
+					<label for="For Note">Leave a Note:</label>
+					<br>
+					<textarea id="note" name='note' rows="4" cols="25"></textarea>
+					<br><br>
+					<div><input type='submit' id='submitBtn' class='btn btn-default' value="Add My Purchase"></div>
+			</div>
+		</form>
 	</div>
 </body>
 </html>

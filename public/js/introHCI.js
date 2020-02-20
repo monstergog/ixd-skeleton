@@ -1,5 +1,7 @@
 'use strict';
 
+var data = 
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -25,7 +27,7 @@ function initializePage() {
 }
 
 function addToList(){
-	console.log("Added to List");
+	console.log("Attempting to Add to List");
 	
 	var x = document.getElementById("myText").value;
 	var newPurchase = {
@@ -35,27 +37,7 @@ function addToList(){
 		"note": document.getElementById("note").value
 	}
 	console.log(newPurchase);
+	callBackFunc();
 	
-	// saveDataToPublicFolder(purchase, function(err) {
-		// if (err) {
-			// res.status(404).send('Data Not Saved');
-			// return;
-		// }
-		
-		// res.send('Data Saved');
-	// });
-	
-	// function savePersonToPublicFolder(data, callback) {
-		// fs.writeFile('../data.json', JSON.stringify(data), callback);
-	// }
-	
-	// $.ajax({
-		// url: 'data',
-		// type: 'GET',
-		// dataType: 'json',
-		// success: (data) => {
-			// console.jog('ajax success');
-		// }
-	// });
-	
-}
+	 // data.purchases.push(newPurchase);
+};
