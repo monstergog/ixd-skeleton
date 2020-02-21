@@ -1,6 +1,7 @@
 {
 	"purchases": [
 		{
+			"num" : "1",
 			"item": "Soda",
 			"cost": "2",
 			"wantNeed": "Want",
@@ -8,6 +9,7 @@
 			"note": "vending machine"
 		},
 		{
+			"num" : "2",
 			"item": "Rent",
 			"cost": "1250",
 			"wantNeed": "Need",
@@ -15,6 +17,7 @@
 			"note": "Monthly Rent"
 		},
 		{
+			"num" : "3",
 			"item": "Gas",
 			"cost": "23",
 			"wantNeed": "Need",
@@ -22,6 +25,7 @@
 			"note": "About half a tank of gas"
 		},
 		{
+			"num" : "4",
 			"item": "Sushi",
 			"cost": "20",
 			"wantNeed": "Want",
@@ -29,6 +33,7 @@
 			"note": "Going out to eat with friends"
 		},
 		{
+			"num" : "5",
 			"item": "Jamba Juice",
 			"cost": "7",
 			"wantNeed": "Want",

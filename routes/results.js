@@ -1,8 +1,9 @@
-var data = require('../data.json');
+var data = require('../public/data.json');
 
 exports.view = function(req, res){
 	var lastObj = {
 		'obj': [{
+		"num": data.purchases.length+1,
 		"item": req.query.item,
 		"cost": req.query.cost,
 		"wantNeed": req.query.wantNeed,
@@ -12,6 +13,7 @@ exports.view = function(req, res){
 	};
 	
 	data.purchases.push({
+		"num": data.purchases.length+1,
 		"item": req.query.item,
 		"cost": req.query.cost,
 		"wantNeed": req.query.wantNeed,

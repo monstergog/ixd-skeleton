@@ -26,14 +26,9 @@
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div style=";font-size:12px;" align="right">
-			<button onclick="goBack()">Go Back</button>
-		</div>
-		<script>
-		function goBack() {
-		  window.history.back();
-		}
-		</script>
+		<a href="/menu" class="thumbnail">
+			<p style=";font-size:20px;" align="center"><b>Back To Main Menu</b></p>
+		</a>
 		
 		<div align="middle" class="jumbotron">
 			<h1>Buy Buddy</h1>
@@ -41,6 +36,16 @@
 
 		<h4 style=";font-size:30px;" align="center"><b>History</b></h4>
 		
+		<!-- <span>Time Range:</span> -->
+		<!-- <select class='ui dropdown' id='timeRange'> -->
+			<!-- <option value='null'>Time Range</option> -->
+			<!-- <option value='day'>Today</option> -->
+			<!-- <option value='week'>This Week</option> -->
+			<!-- <option value='month'>This Month</option> -->
+			<!-- <option value='year'>This Year</option> -->
+		<!-- </select> -->
+		<!-- <button onclick='filter()'>Filter List</button><br><br> -->
+
 		<div><b>
 			Total Amount Spent: $<span id='spent'></span><br>
 			Total Amount Spent on Needs: $<span id='need'></span><br>
@@ -50,19 +55,30 @@
 			var moneySpent = 0;
 			var moneyNeed = 0;
 			var moneyWant = 0;
+			var index = 0;
 		</script>
 		
 		{{#each purchases}}
-			<div class="tempfriends">
-				<h3>{{item}} / ${{cost}} / {{wantNeed}}</a></h3>
+			<div class='toFilter' id={{item}}>
+				<h3>{{num}}.{{item}} / ${{cost}} / {{wantNeed}}</a></h3>
 				<h4>Date: {{date}}</h4>
 				<p>Note:&nbsp{{note}}</p>
+				<form action='/History/Delete'>
+					<span style="display: none;" class='toBeDel'></span>
+					<input type='submit' value="Delete">
+				</form>
 				<hr>
 			</div>
 			
 			<script>
 				var num = parseInt({{cost}});
 				moneySpent = moneySpent + num;
+				
+				$('.toBeDel').html(
+				'<input class="toBeDel" name="item" value="'
+				+ "10"
+				+ '"><input>'
+				);
 				
 				if ("{{wantNeed}}" == 'Need') 
 					{moneyNeed = moneyNeed + num;}

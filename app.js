@@ -8,7 +8,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-//var dataObject = require("./routes/dataObject");
+//var data = require("./data.json");
 
 var index = require('./routes/index');
 var add = require('./routes/add');
@@ -16,6 +16,7 @@ var results = require('./routes/results');
 var history = require('./routes/history');
 var help = require('./routes/help');
 var menu = require('./routes/menu');
+var del = require('./routes/delete');
 // Example route
 // var user = require('./routes/user');
 
@@ -47,9 +48,8 @@ app.get('/results', results.view);
 app.get('/history', history.view);
 app.get('/help', help.view);
 app.get('/menu', menu.view);
-//app.get('/add%20purchase/:userInput', dataObject.view);
+app.get('/history/delete', del.view);
 // Example route
-// app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
