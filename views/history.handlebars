@@ -64,8 +64,8 @@
 				<h4>Date: {{date}}</h4>
 				<p>Note:&nbsp{{note}}</p>
 				<form action='/History/Delete'>
-					<span style="display: none;" class='toBeDel'></span>
-					<input type='submit' value="Delete">
+					<input style="display: none;" class="toBeDel" name="item" value={{num}}></input>
+					<div style="text-align:right"><input id="toDelete" type='submit' value="Delete"></div>
 				</form>
 				<hr>
 			</div>
@@ -73,13 +73,7 @@
 			<script>
 				var num = parseInt({{cost}});
 				moneySpent = moneySpent + num;
-				
-				$('.toBeDel').html(
-				'<input class="toBeDel" name="item" value="'
-				+ "10"
-				+ '"><input>'
-				);
-				
+
 				if ("{{wantNeed}}" == 'Need') 
 					{moneyNeed = moneyNeed + num;}
 				else if ("{{wantNeed}}" == 'Want')

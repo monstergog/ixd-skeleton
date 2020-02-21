@@ -99,3 +99,7 @@ input.advanced {
     border: 1;
 }
 
+#toDelete {
+	width : 5em;
+	height: 2em;
+}

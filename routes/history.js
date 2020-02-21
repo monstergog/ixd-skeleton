@@ -1,7 +1,7 @@
 var data = require('../public/data.json');
 
 exports.view = function(req, res){
-	console.log(data);
+	// console.log(data);
 	
 	res.render('history', data);
 };
