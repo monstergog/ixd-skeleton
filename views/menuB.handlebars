@@ -29,6 +29,36 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		{{> appname}}
+		<div align="center"><b>
+			<h3>Summary Of Your Purchases:</h3>
+			Total Amount Spent: $<span id='spent'></span><br>
+			Total Amount Spent on Needs: $<span id='need'></span><br>
+			Total Amount Spent on Wants: $<span id='want'></span><br>
+		</b></div>
+		<script>
+			var moneySpent = 0;
+			var moneyNeed = 0;
+			var moneyWant = 0;
+			var index = 0;
+		</script>
+		
+		{{#each purchases}}
+			<script>
+				var num = parseInt({{cost}});
+				moneySpent = moneySpent + num;
+
+				if ("{{wantNeed}}" == 'Need') 
+					{moneyNeed = moneyNeed + num;}
+				else if ("{{wantNeed}}" == 'Want')
+					{moneyWant = moneyWant + num;}
+			</script>
+		{{/each}}
+		
+		<script>
+			document.getElementById("spent").innerHTML = moneySpent;
+			document.getElementById("need").innerHTML = moneyNeed;
+			document.getElementById("want").innerHTML = moneyWant;
+		</script>
 
 		<h4 style=";font-size:30px;" align="center"><b>Menu</b></h4>
 		{{#each projects}}
@@ -44,9 +74,9 @@
 				</a>
 			</div>
 			
-		<div style=";font-size:30px;" class="project" id="MenuB">
-				<a href="/menuB" class="thumbnail">
-					<p>To Menu Version B</p>
+		<div style=";font-size:30px;" class="project" id="MenuA">
+				<a href="/menu" class="thumbnail">
+					<p>To Menu Version A</p>
 				</a>
 		</div>
 	</div>
