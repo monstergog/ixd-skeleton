@@ -23,6 +23,8 @@ function initializePage() {
 		$('.advanced').hide();
 		event.preventDefault();
 	});
+
+	$("#project2").click(ga("send", "event", 'history', 'click'));
 }
 
 function errCheck(){
