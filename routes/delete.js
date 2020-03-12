@@ -18,7 +18,6 @@ exports.view = function(req, res){
 				data.purchases[index].num = index;
 				newData[index-1] = data.purchases[index];
 			}
-			console.log(newData);
 		}
 	}
 	data.purchases = newData;

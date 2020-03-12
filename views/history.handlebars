@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>Buy Buddy</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 		{{> summary}}
 		
 		{{#each purchases}}
-			<div class='toFilter' id={{item}}>
+			<div class="list">
 				<h3>{{num}}.{{item}} / ${{cost}} / {{wantNeed}}</a></h3>
 				<h4>Date: {{date}}</h4>
 				<p>Note:&nbsp{{note}}</p>
@@ -44,8 +44,9 @@
 					<input style="display: none;" class="toBeDel" name="item" value={{num}}></input>
 					<div style="text-align:right"><input class="toDelete" type='submit' value="Delete"></div>
 				</form>
-				<hr>
 			</div>
+			
+			<hr>
 			
 			<script>
 				var num = parseInt({{cost}});

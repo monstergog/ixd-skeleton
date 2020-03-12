@@ -47,6 +47,12 @@ body {
     color: #6e6e6e;
 }
 
+div.list {
+	background-color: white;
+	border-radius: 25px;
+	padding: 20px;
+}
+
 a {
     text-align: center;
 }
