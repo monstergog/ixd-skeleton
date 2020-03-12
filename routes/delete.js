@@ -22,9 +22,5 @@ exports.view = function(req, res){
 		}
 	}
 	data.purchases = newData;
-	
-	// console.log(newData);
-	
-	//data.purchases.splice(0, data.purchases.length);
 	res.render('history', data);
 };

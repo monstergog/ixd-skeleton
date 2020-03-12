@@ -14,9 +14,10 @@ var index = require('./routes/index');
 var add = require('./routes/add');
 var results = require('./routes/results');
 var history = require('./routes/history');
-var help = require('./routes/help');
+// var help = require('./routes/help');
 var menu = require('./routes/menu');
 var del = require('./routes/delete');
+var clear = require('./routes/clear');
 // Example route
 // var user = require('./routes/user');
 
@@ -46,9 +47,10 @@ app.get('/', index.view);
 app.get('/add%20purchase', add.view);
 app.get('/results', results.view);
 app.get('/history', history.view);
-app.get('/help', help.view);
+// app.get('/help', help.view);
 app.get('/menu', menu.view);
 app.get('/history/delete', del.view);
+app.get('/history/clear', clear.view);
 // Example route
 
 http.createServer(app).listen(app.get('port'), function(){

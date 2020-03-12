@@ -41,13 +41,3 @@ function errCheck(){
 	if (date == ""){alert("Please Submit a Date"); return false;}
 	return true;
 };
-
-function filter()
-{
-	$.get("./data.json", callBackFn);
-}
-
-function callBackFn(result) {
-	$('.toFilter').hide();
-	console.log(result.purchases[0].date);
-}
