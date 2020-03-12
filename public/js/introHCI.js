@@ -24,7 +24,7 @@ function initializePage() {
 		event.preventDefault();
 	});
 
-	$("#project2").click(ga("send", "event", 'history', 'click'));
+	$("#project2").click(("send", "event", 'history', 'click'));
 }
 
 function errCheck(){

@@ -21,11 +21,15 @@
 body {
     border: 1px dotted gray;
     padding: 20px;
+	background-color: lightblue;
+}
+
+.title {
+	font-weight: bold;
 }
 
 .jumbotron {
     position: relative;
-    background: none;
 }
 
 .jumbotron:after {
@@ -43,8 +47,23 @@ body {
     color: #6e6e6e;
 }
 
-.project a {
+a {
     text-align: center;
+}
+
+a:link, a:visited {
+  /* background-color: white; */
+  /* color: black; */
+  border: 2px groove #00255c;
+  /* padding: 10px 20px; */
+  /* text-align: center; */
+  /* text-decoration: none; */
+  /* display: inline-block; */
+}
+
+a:hover, a:active {
+  background-color: #505f75;
+  color: white;
 }
 
 .jumbotron p.active {
@@ -82,8 +101,6 @@ input.advanced {
     float: left;
     width: 50%;
 }
-
-
 /* Clear floats after the columns */
 
 .row:after {
@@ -99,7 +116,7 @@ input.advanced {
     border: 1;
 }
 
-#toDelete {
+input.toDelete {
 	width : 5em;
 	height: 2em;
 }

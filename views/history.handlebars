@@ -20,16 +20,14 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<a href="/menu" class="thumbnail">
-			<p style=";font-size:20px;" align="center"><b>Back To Main Menu</b></p>
-		</a>
-		
+		{{> backbutton}}
 		{{> appname}}
 
 		<h4 style=";font-size:30px;" align="center"><b>History</b></h4>
@@ -44,18 +42,7 @@
 		<!-- </select> -->
 		<!-- <button onclick='filter()'>Filter List</button><br><br> -->
 
-		<div><b>
-			<h3>Summary Of Your Purchases:</h3>
-			Total Amount Spent: $<span id='spent'></span><br>
-			Total Amount Spent on Needs: $<span id='need'></span><br>
-			Total Amount Spent on Wants: $<span id='want'></span><br>
-		</b></div>
-		<script>
-			var moneySpent = 0;
-			var moneyNeed = 0;
-			var moneyWant = 0;
-			var index = 0;
-		</script>
+		{{> summary}}
 		
 		{{#each purchases}}
 			<div class='toFilter' id={{item}}>
@@ -64,7 +51,7 @@
 				<p>Note:&nbsp{{note}}</p>
 				<form action='/History/Delete'>
 					<input style="display: none;" class="toBeDel" name="item" value={{num}}></input>
-					<div style="text-align:right"><input id="toDelete" type='submit' value="Delete"></div>
+					<div style="text-align:right"><input class="toDelete" type='submit' value="Delete"></div>
 				</form>
 				<hr>
 			</div>

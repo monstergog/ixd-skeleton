@@ -1,0 +1,35 @@
+		<div align="center"><b>
+			<h3>Summary Of Your Purchases:</h3>
+			Total Amount Spent: $<span id='spent'></span><br>
+			Total Amount Spent on Needs: $<span id='need'></span><br>
+			Total Amount Spent on Wants: $<span id='want'></span><br>
+		</b></div>
+		
+		<div align="center" id="donutchart"></div>
+				
+		<script>
+			var moneySpent = 0;
+			var moneyNeed = 0;
+			var moneyWant = 0;
+			var index = 0;
+			
+			// Load google charts
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+			// Draw the chart and set the chart values
+			function drawChart() {
+			  var data = google.visualization.arrayToDataTable([
+			  ['Type of Purchase', 'Dollars Spent'],
+			  ['Needs', moneyNeed],
+			  ['Wants', moneyWant],
+			]);
+
+			  // Optional; add a title and set the width and height of the chart
+			  var options = {colors:['#f54e4e','#f5bb4e'], pieHole:0.4, legend: 'none', backgroundColor:'lightblue',};
+
+			  // Display the chart inside the <div> element with id="donutchart"
+			  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+			  chart.draw(data, options);
+			}
+		</script>
