@@ -120,3 +120,8 @@ input.toDelete {
 	width : 5em;
 	height: 2em;
 }
+
+.no
+{
+	display: none;
+}

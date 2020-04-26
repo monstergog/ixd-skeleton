@@ -1,52 +1,52 @@
 {
-	"purchases": [
+	"purchases":
+	[
 		{
-			"num" : "1",
-			"item": "Soda",
-			"cost": "2",
-			"wantNeed": "Want",
-			"date": "2020-2-15",
-			"note": "vending machine"
+			"num":"1",
+			"item":"Soda",
+			"cost":"2",
+			"wantNeed":"Want",
+			"date":"2020-2-15",
+			"note":"vending machine",
+			"vis":"yes"
 		},
 		{
-			"num" : "2",
-			"item": "Rent",
-			"cost": "1250",
-			"wantNeed": "Need",
-			"date": "2020-3-1",
-			"note": "Monthly Rent"
+			"num":"2",
+			"item":"Gas",
+			"cost":"23",
+			"wantNeed":"Need",
+			"date":"2020-3-1",
+			"note":"Over half a Tank of Gas",
+			"vis":"yes"
 		},
 		{
-			"num" : "3",
-			"item": "Gas",
-			"cost": "23",
-			"wantNeed": "Need",
-			"date": "2020-2-20",
-			"note": "About half a tank of gas"
+			"num":"3",
+			"item":"Sushi",
+			"cost":"20",
+			"wantNeed":"Want",
+			"date":"2020-2-20",
+			"note":"vending machine",
+			"vis":"yes"
 		},
 		{
-			"num" : "4",
-			"item": "Sushi",
-			"cost": "20",
-			"wantNeed": "Want",
-			"date": "2020-2-20",
-			"note": "Going out to eat with friends"
-		},
-		{
-			"num" : "5",
-			"item": "Jamba Juice",
-			"cost": "7",
-			"wantNeed": "Want",
-			"date": "2020-2-22",
-			"note": "Large Jamba drink"
+			"num":"4",
+			"item":"Jamba Juice",
+			"cost":"7",
+			"wantNeed":"Want",
+			"date":"2020-2-22",
+			"note":"Large Jamba drink",
+			"vis":"yes"
 		}
 	],
-		"projects": [
-	  { "name": "Add Purchase",
-		"id": "project1"
-	  },
-	  { "name": "History",
-		"id": "project2"
-	  }
+	"projects":
+	[
+		{
+			"name": "Add Purchase",
+			"id": "project1"
+		},
+		{
+			"name": "History",
+			"id": "project2"
+		}
 	] 
 }

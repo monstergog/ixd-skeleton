@@ -23,19 +23,30 @@
 
 		<h4 style=";font-size:30px;" align="center"><b>History</b></h4>
 		
-		<!-- <span>Time Range:</span> -->
-		<!-- <select class='ui dropdown' id='timeRange'> -->
-			<!-- <option value='null'>Time Range</option> -->
-			<!-- <option value='day'>Today</option> -->
-			<!-- <option value='week'>This Week</option> -->
-			<!-- <option value='month'>This Month</option> -->
-			<!-- <option value='year'>This Year</option> -->
-		<!-- </select> -->
-		<!-- <button onclick='filter()'>Filter List</button><br><br> -->
-
+		<form action='/History/Filter'>
+		<span>Time Range:</span>
+		<select class='ui dropdown' id='timeRange' name='timeRange'>
+			<option value='null'>Time Range</option>
+			<option value='day'>Today</option>
+			<option value='week'>This Week</option>
+			<option value='month'>This Month</option>
+			<option value='year'>This Year</option>
+		</select>
+		<br><br>
+		<span>Need or Want:</span>
+		<select class='ui dropdown' id='needWant' name='needWant'>
+			<option value='null'>Need or Want</option>
+			<option value='Need'>Need</option>
+			<option value='Want'>Want</option>
+		</select>
+		<br><br>
+		<input type='submit' class="toDelete" value="Filter List"><br><br>
+		</form>
+		
 		{{> summary}}
 		
 		{{#each purchases}}
+			<div class="{{vis}}">
 			<div class="list">
 				<h3>{{num}}.{{item}} / ${{cost}} / {{wantNeed}}</a></h3>
 				<h4>Date: {{date}}</h4>
@@ -45,8 +56,8 @@
 					<div style="text-align:right"><input class="toDelete" type='submit' value="Delete"></div>
 				</form>
 			</div>
-			
 			<hr>
+			</div>
 			
 			<script>
 				var num = parseInt({{cost}});

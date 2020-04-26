@@ -18,6 +18,7 @@ var history = require('./routes/history');
 var menu = require('./routes/menu');
 var del = require('./routes/delete');
 var clear = require('./routes/clear');
+var filter = require('./routes/filter');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,6 +52,7 @@ app.get('/history', history.view);
 app.get('/menu', menu.view);
 app.get('/history/delete', del.view);
 app.get('/history/clear', clear.view);
+app.get('/history/filter', filter.view);
 // Example route
 
 http.createServer(app).listen(app.get('port'), function(){

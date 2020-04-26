@@ -8,7 +8,8 @@ exports.view = function(req, res){
 		"cost": req.query.cost,
 		"wantNeed": req.query.wantNeed,
 		"date": req.query.date,
-		"note": req.query.note
+		"note": req.query.note,
+		"vis":"yes"
 		}]
 	};
 	
@@ -18,7 +19,8 @@ exports.view = function(req, res){
 		"cost": req.query.cost,
 		"wantNeed": req.query.wantNeed,
 		"date": req.query.date,
-		"note": req.query.note
+		"note": req.query.note,
+		"vis":"yes"
 	});
 	
 	res.render('results', lastObj);
