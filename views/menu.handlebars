@@ -29,7 +29,7 @@
 	<!-- End Google Analytics -->
 </head>
 
-<body>
+<body style=";font-size:2vh;">
 	<div class="container">
 		{{> appname}}
 		{{> summary}}
@@ -52,15 +52,15 @@
 			document.getElementById("want").innerHTML = moneyWant;
 		</script>
 
-		<h4 style=";font-size:30px;" align="center"><b>Menu</b></h4>
+		<br><p align="center"><b>Menu</b></p>
 		{{#each projects}}
-			<div style=";font-size:30px;" class="project" id="{{id}}">
+			<div class="project" id="{{id}}">
 				<a href="{{name}}" class="thumbnail">
 					<p>{{name}}</p>
 				</a>
 			</div>
 		{{/each}}
-			<div style=";font-size:30px;" class="project" id="Login">
+			<div class="project" id="Login">
 				<a href="/" class="thumbnail">
 					<p>Logout</p>
 				</a>

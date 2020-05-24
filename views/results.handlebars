@@ -14,25 +14,25 @@
 	<script src="/js/introHCI.js"></script>	
 </head>
 
-<body>
+<body style=";font-size:2vh;">
 	<div class="container">	
 		{{> appname}}
 
-		<h4 style=";font-size:30px;" align="center"><b>Results</b></h4>
+		<p align="center"><b>Results</b></p>
 		<p align="center"> You added:
 		{{#each obj}}
-			<h3 align="center">{{item}} / ${{cost}} / {{wantNeed}}</h3>
-			<h4 align="center">Date: {{date}}</h4>
+			<p align="center">{{item}} / ${{cost}} / {{wantNeed}}</p>
+			<p align="center">Date: {{date}}</p>
 			<p align="center">Note:&nbsp {{note}}</p>
 			<hr>
 		{{/each}}
 		</p>
 		
 		<a href="/add%20purchase" class="thumbnail">
-			<p style=";font-size:20px;" align="center"><b>Add Another Purchase</b></p>
+			<p align="center"><b>Add Another Purchase</b></p>
 		</a>
 		<a href="/menu" class="thumbnail">
-			<p style=";font-size:20px;" align="center"><b>Back To Main Menu</b></p>
+			<p align="center"><b>Back To Main Menu</b></p>
 		</a>
 	</div>
 </body>

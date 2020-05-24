@@ -15,13 +15,13 @@
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
-<body>
+<body style=";font-size:2vh;">
 	<div class="container">
 
 		{{> backbutton}}
 		{{> appname}}
 
-		<h4 style=";font-size:30px;" align="center"><b>History</b></h4>
+		<p align="center"><b>History</b></p>
 		
 		<form action='/History/Filter'>
 		<span>Time Range:</span>
@@ -43,13 +43,13 @@
 		<input type='submit' class="toDelete" value="Filter List"><br><br>
 		</form>
 		
-		{{> summary}}
+		{{> summary}}<br>
 		
 		{{#each purchases}}
 			<div class="{{vis}}">
 			<div class="list">
-				<h3>{{num}}.{{item}} / ${{cost}} / {{wantNeed}}</a></h3>
-				<h4>Date: {{date}}</h4>
+				<p>{{num}}.{{item}} / ${{cost}} / {{wantNeed}}</a></p>
+				<p>Date: {{date}}</p>
 				<p>Note:&nbsp{{note}}</p>
 				<form action='/History/Delete'>
 					<input style="display: none;" class="toBeDel" name="item" value={{num}}></input>

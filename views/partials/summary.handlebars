@@ -1,11 +1,13 @@
-		<div align="center"><b>
-			<h3>Summary Of Your Purchases:</h3>
+		<div class='sumBlock'>
+		<div align="center" style=";font-size:2vh;">
+			<h3 style=";font-size:2vh;"><b>Summary Of Your Purchases:</b></h3>
 			Total Amount Spent: $<span id='spent'></span><br>
 			Total Amount Spent on Needs: $<span id='need'></span><br>
 			Total Amount Spent on Wants: $<span id='want'></span><br>
-		</b></div>
+		</div>
 		
-		<div align="center" id="donutchart"></div>
+		<div id="donutchart"></div>
+		</div>
 				
 		<script>
 			var moneySpent = 0;
@@ -26,7 +28,12 @@
 			]);
 
 			  // Optional; add a title and set the width and height of the chart
-			  var options = {colors:['#f54e4e','#f5bb4e'], pieHole:0.4, legend: 'none', backgroundColor:'lightblue',};
+			  var options = {colors:['#f54e4e','#f5bb4e'],
+							'fontSize':25,
+							pieHole:0.4,
+							legend: 'none',
+							backgroundColor:{'fill':'lightgrey'},
+							};
 
 			  // Display the chart inside the <div> element with id="donutchart"
 			  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
