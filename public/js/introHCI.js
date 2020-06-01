@@ -12,19 +12,17 @@ function initializePage() {
 	$(".formSubmit").click(function(event){
 	  if (errCheck() == true)
 	  {
-		$('.searchMenu').hide();
-		$('.hidden').removeClass('hidden');
+		$('.searchMenu').slideUp('slow');
+		$('.hidden2').slideDown('slow');
 	  }
 	  event.preventDefault();
 	});
 	
-	$(".advanced").click(function(event){
-		$('.hidden2').removeClass('hidden2');
-		$('.advanced').hide();
+	$(".moveNext").click(function(event){
 		event.preventDefault();
+		$(".toFade").slideUp('slow');
+		$('.hidden2').slideDown('slow');
 	});
-
-	$("#project2").click(("send", "event", 'history', 'click'));
 }
 
 function errCheck(){

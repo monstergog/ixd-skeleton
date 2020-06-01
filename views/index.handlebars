@@ -17,8 +17,17 @@
 </head>
 
 <body style=";font-size:2vh;">
-	<div class="container">
+
+	<div class='container'>
 		{{> appname}}
+	<div class='toFade' align="center">
+		<b><p>Your personal buddy to help you track and manage your</p>
+		<p>spending habits by separating your "needs" from your "wants."</p>
+		</b>
+		<u style="color:#4d79ff;"><h2 class='moveNext'>Find Where You Can Cut Back On Spending Now</h2></u>
+	</div>
+	
+	<div class='hidden2' style="display:none;">
 			<div class="project" id="Login">
 			<div align="center">
 				<label for="username">Username:</label>
@@ -38,6 +47,7 @@
 			<span class="facebookLogin">Or login through Facebook:</span>
 			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 			</fb:login-button>
+	</div>
 	</div>
 </body>
 </html>
